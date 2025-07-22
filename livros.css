@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0c1a;
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #b0e0ff;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 10px;
+  color: #87ceeb;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.livro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #1a1c2b;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.livro:hover {
+  transform: scale(1.01);
+}
+
+.livro-img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.livro-info {
+  flex: 1;
+}
+
+.livro-info h2 {
+  font-size: 1.5rem;
+  color: #b0e0ff;
+  margin-bottom: 10px;
+}
+
+.livro-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.ler-btn {
+  background-color: #4c89ff;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.ler-btn:hover {
+  background-color: #3a6bdc;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
