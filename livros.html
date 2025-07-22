@@ -3,41 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meus Livros - Coelho</title>
+  <title>Meus Livros — Coelho</title>
   <link rel="stylesheet" href="livros.css" />
 </head>
 <body>
   <header>
-    <h1>📚 Biblioteca Cósmica</h1>
-    <a href="index.html" class="back-button">← Voltar para o início</a>
+    <h1>📚 Meu Universo Literário</h1>
+    <a href="index.html" class="back-button">← Voltar</a>
   </header>
 
-  <main>
-    <section class="livro">
-      <img src="link-da-imagem-do-livro1.jpg" alt="Capa do Livro 1" class="livro-img">
-      <div class="livro-info">
+  <main class="book-list">
+    <section class="book-card">
+      <img src="img/livro1.jpg" alt="Capa do Livro 1" class="book-img">
+      <div class="book-info">
         <h2>Título do Livro 1</h2>
-        <p>Pequena descrição do livro, resumo, ou algo que você curte nele.</p>
-        <a href="#" class="ler-btn">📖 Ler agora</a>
+        <p>Pequena descrição sobre o que o livro significa para você.</p>
+        <div class="rating" aria-label="Avaliação: 4 estrelas">
+          ⭐⭐⭐⭐☆
+        </div>
       </div>
     </section>
 
-    <section class="livro">
-      <img src="link-da-imagem-do-livro2.jpg" alt="Capa do Livro 2" class="livro-img">
-      <div class="livro-info">
+    <section class="book-card">
+      <img src="img/livro2.jpg" alt="Capa do Livro 2" class="book-img">
+      <div class="book-info">
         <h2>Título do Livro 2</h2>
-        <p>Outro resumo ou observação.</p>
-        <a href="#" class="ler-btn">📖 Ler agora</a>
+        <p>Uma reflexão ou comentário pessoal sobre o livro.</p>
+        <div class="rating" aria-label="Avaliação: 5 estrelas">
+          ⭐⭐⭐⭐⭐
+        </div>
       </div>
     </section>
-
-    <!-- Adicione quantos livros quiser -->
+    <!-- Adicione quantos quiser -->
   </main>
 
   <footer>
-    <p>🚀 Página de livros criada por Coelho</p>
+    <p>Feito com 💫 por Coelho</p>
   </footer>
-
-  <script src="livros.js"></script>
 </body>
 </html>
