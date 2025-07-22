@@ -1,0 +1,230 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Press+Start+2P&display=swap');
+
+:root {
+  --bg-dark: #12182b;
+  --bg-gradient-start: #1c2541;
+  --bg-gradient-end: #0b1120;
+  --text-primary: #d8e1f1;
+  --text-secondary: #a0accf;
+  --btn-bg: #2a3a72;
+  --btn-hover-bg: #394a7a;
+  --btn-border: #4a5a8a;
+  --btn-shadow: rgba(0, 0, 0, 0.25);
+  --header-color: #a3b3db;
+  --highlight-color: #c2a454;
+  --footer-color: #5a6682;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', 'Press Start 2P', monospace, sans-serif;
+  user-select: none;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--header-color);
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.site-title .highlight {
+  color: var(--highlight-color);
+  text-shadow: 1px 1px 4px rgba(194,164,84,0.8);
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  letter-spacing: 1.5px;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+/* Main container */
+.main-container {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* Intro Screen */
+.intro-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1rem;
+  animation: fadeIn 1s ease forwards;
+  color: var(--text-primary);
+}
+
+/* Astronauta / foguete */
+.astro-container {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 8px rgba(194, 164, 84, 0.6));
+  user-select: none;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+}
+
+.astro-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Flutuação suave */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.intro-text {
+  max-width: 420px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  font-style: normal;
+}
+
+/* Button Start */
+.btn-start {
+  padding: 1rem 2.5rem;
+  background: var(--btn-bg);
+  border: 2px solid var(--btn-border);
+  border-radius: 10px;
+  color: var(--highlight-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow:
+    0 2px 6px var(--btn-shadow),
+    inset 0 0 6px rgba(74,90,138,0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
+  font-family: 'Press Start 2P', monospace;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.btn-start:hover,
+.btn-start:focus {
+  background-color: var(--btn-hover-bg);
+  box-shadow:
+    0 4px 10px rgba(194,164,84,0.7),
+    inset 0 0 8px rgba(74,90,138,0.6);
+  outline: none;
+  transform: scale(1.05);
+}
+
+/* Menu Screen */
+.menu-screen {
+  margin-top: 2rem;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+.menu-screen.hidden {
+  display: none;
+}
+
+.menu-screen h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.7rem;
+  color: var(--header-color);
+  margin-bottom: 1.8rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(194,164,84,0.6);
+}
+
+/* Destinations Buttons Grid */
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.8rem;
+}
+
+.dest-btn {
+  background: var(--btn-bg);
+  border: 2px solid var(--btn-border);
+  border-radius: 12px;
+  color: var(--highlight-color);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.9rem;
+  padding: 1.3rem;
+  cursor: pointer;
+  box-shadow:
+    0 2px 8px var(--btn-shadow),
+    inset 0 0 5px rgba(74,90,138,0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  text-transform: uppercase;
+}
+
+.dest-btn:hover,
+.dest-btn:focus {
+  background-color: var(--btn-hover-bg);
+  box-shadow:
+    0 4px 12px rgba(194,164,84,0.6),
+    inset 0 0 7px rgba(74,90,138,0.5);
+  outline: none;
+  transform: scale(1.04);
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: var(--footer-color);
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: 1.5px;
+  text-align: center;
+  user-select: none;
+}
+
+.footer a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: var(--btn-hover-bg);
+  outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
