@@ -1,59 +1,30 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #0d0d2b, #1e1e3f);
-  color: #ffffff;
-  min-height: 100vh;
-  padding: 2rem;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0d0d1a, #1a1a2e);
+  color: #f0f0f0;
+  padding: 20px;
 }
 
-/* Cabeçalho */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #444;
-  padding-bottom: 1rem;
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
-header h1 {
+h1 {
+  text-align: center;
   font-size: 2rem;
-  color: #b4d0ff;
-}
-
-.btn-voltar {
-  text-decoration: none;
-  background-color: #2a2a80;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.btn-voltar:hover {
-  background-color: #4040a1;
-}
-
-/* Conteúdo Principal */
-.filmes-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  margin-bottom: 40px;
+  color: #9be3ff;
 }
 
 .filme {
   background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #444;
-  border-radius: 12px;
-  padding: 1.5rem;
+  border-left: 4px solid #5ecdfd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
   transition: transform 0.2s ease;
 }
 
@@ -62,18 +33,39 @@ header h1 {
 }
 
 .filme h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: #e0e0ff;
-}
-
-.filme p {
-  margin: 0.5rem 0;
-  font-weight: bold;
-  color: #ccccff;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .estrelas {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: gold;
+  margin: 5px 0;
+}
+
+.resenha {
+  font-size: 0.95rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #d3e1f7;
+  font-style: italic;
+}
+
+.voltar {
+  display: block;
+  margin: 40px auto 0;
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.voltar:hover {
+  background-color: #5ecdfd;
+  color: #000;
 }
