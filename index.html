@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Legend of Coelho - Space Odyssey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <h1 class="site-title" aria-label="The Legend of Coelho">🚀 The Legend of <span class="highlight">Coelho</span></h1>
+    <p class="tagline">Uma aventura cósmica pelas galáxias do conhecimento</p>
+  </header>
+
+  <main class="main-container" role="main">
+
+    <section class="intro-screen" aria-label="Tela inicial do jogo">
+      <div class="astro-container" aria-hidden="true">
+        <!-- Aqui você coloca a imagem do astronauta ou foguete -->
+        <img src="img/astronauta.png" alt="" class="astro-img" />
+      </div>
+      <p class="intro-text">Comandante, sua missão está prestes a começar. Prepare-se para explorar meu universo!</p>
+      <button class="btn-start" aria-label="Começar aventura interativa">Iniciar Jornada</button>
+    </section>
+
+    <section class="menu-screen hidden" aria-label="Menu principal de destinos">
+      <h2>Escolha seu destino</h2>
+      <div class="destinations" role="list">
+
+        <button class="dest-btn" data-link="poemas.html" role="listitem" aria-label="Poemas e cartas do Coelho">
+          🌌 Poemas & Cartas
+        </button>
+
+        <button class="dest-btn" data-link="livros.html" role="listitem" aria-label="Livros recomendados pelo Coelho">
+          📚 Livros
+        </button>
+
+        <button class="dest-btn" data-link="filmes.html" role="listitem" aria-label="Filmes favoritos do Coelho">
+          🎬 Filmes
+        </button>
+
+        <button class="dest-btn" data-link="quiz.html" role="listitem" aria-label="Quiz interativo para testar seus conhecimentos">
+          ❓ Quiz
+        </button>
+
+        <button class="dest-btn" data-link="galeria.html" role="listitem" aria-label="Galeria de fotos e memórias">
+          🛰️ Galeria
+        </button>
+
+        <button class="dest-btn" data-link="pensamentos.html" role="listitem" aria-label="Reflexões e pensamentos do Coelho">
+          💭 Pensamentos
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>Feito com 💫 por Coelho</p>
+    <p>
+      <a href="mailto:seu@email.com">Email</a> |
+      <a href="https://instagram.com/seuuser" target="_blank" rel="noopener noreferrer">Instagram</a> |
+      <a href="https://github.com/seuuser" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
+  <audio id="click-sound" src="https://freesound.org/data/previews/331/331912_3248244-lq.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
