@@ -1,0 +1,79 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0d0d2b, #1e1e3f);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #b4d0ff;
+}
+
+.btn-voltar {
+  text-decoration: none;
+  background-color: #2a2a80;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #4040a1;
+}
+
+/* Conteúdo Principal */
+.filmes-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.filme {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.filme:hover {
+  transform: scale(1.02);
+}
+
+.filme h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0ff;
+}
+
+.filme p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #ccccff;
+}
+
+.estrelas {
+  font-size: 1.4rem;
+  color: gold;
+}
